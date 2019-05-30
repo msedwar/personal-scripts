@@ -1,0 +1,20 @@
+[color]
+	ui = true
+[alias]
+	lg = log --graph --pretty=format:"%C(yellow)%h%C(reset) - %C(auto)%s%C(reset) %C(green)(%cr)%C(reset) %C(cyan)<%an>%C(reset)%C(dim white)%d%C(reset)"
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	co = checkout
+	st = status --short
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[branch.master]
+	remote = origin
+	merge = refs/heads/master
+[remote.origin]
+	fetch =+refs/heads/master:refs/remotes/origin/master
